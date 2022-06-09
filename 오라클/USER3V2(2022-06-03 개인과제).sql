@@ -30,12 +30,12 @@ select * from tbl_books;
 			)
 		values 
 			(
-			2,
-			222,
-            222,
-            222,
-            200,
-            100,
+			3,
+			33,
+            333,
+            3,
+            3,
+            3,
             500,
             500,
             500,
@@ -43,3 +43,4 @@ select * from tbl_books;
 			);
 		
 		
+commit;
