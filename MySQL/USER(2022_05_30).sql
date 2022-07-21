@@ -175,5 +175,17 @@ Insert into TBL_STUDENT (ST_NUM,ST_NAME,ST_DEPT,ST_GRADE,ST_TEL,ST_ADDR) values 
 Insert into TBL_STUDENT (ST_NUM,ST_NAME,ST_DEPT,ST_GRADE,ST_TEL,ST_ADDR) values ('S0101','홍길동','컴공과',3,'000-0000-0000','광양');
 
 SELECT * FROM TBL_STUDENT;
+SELECT * FROM TBL_ems;
+select * from tbl_users;
+select * from tbl_memo;
 
+commit;
 
+drop table tbl_file;
+drop table tbl_memo;
+use mydb;
+drop table tbl_ems;
+
+desc tbl_memo;
+desc tbl_users;
+show tables;

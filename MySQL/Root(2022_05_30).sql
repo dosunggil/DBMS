@@ -41,7 +41,22 @@ grant all privileges on *.* to 'user1'@'127.0.0.1';
 -- 어디에서나 접속할 수 있도록 범위를 지정하지 않은 사용자 등록.
 CREATE USER 'user2'@'*' identified by '!Korea8080';
 
-
+-- 2022-07-21 
+Create database schoolDB;
+use schooldb;
+-- 학사정보 테이블 명세를 참조하여 tbl_student table 생성
+create table tbl_student (
+st_num	VARCHAR(5)		PRIMARY KEY,
+st_name	VARCHAR(20)	NOT NULL	,
+st_dept	VARCHAR(20)		,
+st_grade	INT		,
+st_tel	VARCHAR(15)	NOT NULL,	
+st_addr	VARCHAR(125)		
+);
+-- 현재 root 외 등록된 사용자에게 DB 전체에 대한 권한 부여하기
+GRANT all privileges on *.* to dosunggil@'localhost';
+-- 권한 부여 후 적용시키기
+flush privileges;
 
 
 
