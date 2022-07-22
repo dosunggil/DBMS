@@ -58,7 +58,9 @@ GRANT all privileges on *.* to dosunggil@'localhost';
 -- 권한 부여 후 적용시키기
 flush privileges;
 
+drop database schooldb;
 
+create database schooldb;
 
 
 
